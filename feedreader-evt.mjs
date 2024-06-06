@@ -43,7 +43,6 @@ emitter.on('del', async (index) => {
     console.log(`Please include the index of the url you want to delete`);
   } else {
     index = parseInt(index, 10);
-
     if (index > -1 && index < feeds.length) {
       feeds.splice(index, 1);
       console.log(`${feeds[index]} deleted from feeds list!`);
