@@ -15,7 +15,6 @@ function prompt() {
 
 rl.on('line', (input) => {
   let cmdParts = input.trim().split(' ');
-
   emitter.emit(cmdParts[0], cmdParts[1]);
 });
 
