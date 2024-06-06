@@ -44,8 +44,8 @@ emitter.on('del', async (index) => {
   } else {
     index = parseInt(index, 10);
     if (index > -1 && index < feeds.length) {
-      feeds.splice(index, 1);
       console.log(`${feeds[index]} deleted from feeds list!`);
+      feeds.splice(index, 1);
     } else {
       console.log(`The provided index is out of range!`);
     }
