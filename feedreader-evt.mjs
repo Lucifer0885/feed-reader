@@ -59,7 +59,7 @@ emitter.on('read', async (index) => {
   } else {
     index = parseInt(index, 10);
 
-    if (index > -1 && index < feeds.length) {
+    if (index >- 1 && index < feeds.length) {
       try {
         let { data } = await axios.get(feeds[index]);
 
